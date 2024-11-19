@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/globais.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">ELEGANCE&CO. <span>STORE</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <div id="indicador" style="color:white; padding: 3px; background-color: gray; border-radius: 15px;"></div>
+                <img src="/img/shopping_bag_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+                <img src="/img/menu_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="menuHamburguer">
+                <img src="/img/close_30dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" class="menuClose">
+            <!-- USER PROFILE -->
+            <button id="btn-message" class="button-message">
+                <div class="content-avatar">
+                    <div class="status-user"></div>
+                    <div class="avatar">
+                        <svg class="user-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"></path></svg>
+                    </div>
+                </div>
+                <div class="notice-content">
+                    <div class="username">Faça Login</div>
+                    <!-- <div class="lable-message">Message<span class="number-message">3</span></div> -->
+                    <div class="user-id"></div>
+                </div>
+            </button>
+            <!-- USER PROFILE FINAL -->
+            </div>
+        </div>
+    </div>
+
+<div class="containere">
+  <div class="carde cart">
+    <label class="title">CHECKOUT</label>
+    <div class="stepse">
+      <div class="stepe">
+        <div>
+          <span>SHIPPING</span>
+          <p>221B Baker Street, W1U 8ED</p>
+          <p>London, United Kingdom</p>
+        </div>
+        <hr>
+        <div>
+          <span>PAYMENT METHOD</span>
+          <p>Visa</p>
+          <p>**** **** **** 4243</p>
+        </div>
+        <hr>
+        <div class="promo">
+          <span>HAVE A PROMO CODE?</span>
+          <form class="forme">
+            <input type="text" placeholder="Enter a Promo Code" class="input_field">
+            <button>Apply</button>
+          </form>
+        </div>
+        <hr>
+        <div class="payments">
+          <span>PAYMENT</span>
+          <div class="details">
+            <span>Subtotal:</span>
+            <span>$240.00</span>
+            <span>Shipping:</span>
+            <span>$10.00</span>
+            <span>Tax:</span>
+            <span>$30.40</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carde checkout">
+    <div class="footer">
+      <label class="pricee">$280.40</label>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+</div>
+</body>
+
+<style>
+    /* From Uiverse.io by SSpisso */ 
+/* Body */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.containere {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px;
+
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  hr {
+    height: 1px;
+    background-color: rgba(16, 86, 82, .75);
+    ;
+    border: none;
+  }
+  
+  .carde {
+    width: 400px;
+    background: rgb(255, 250, 235);
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid rgba(16, 86, 82, .75);
+    ;
+    font-weight: 700;
+    font-size: 11px;
+    color: #000000;
+  }
+  
+  /* Cart */
+  .cart {
+    border-radius: 19px 19px 0px 0px;
+  }
+  
+  .cart .stepse {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .cart .stepse .stepe {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .cart .stepse .stepe span {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .cart .stepse .stepe p {
+    font-size: 11px;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  /* Promo */
+  .promo forme {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    gap: 10px;
+    padding: 0px;
+  }
+  
+  .input_field {
+    width: auto;
+    height: 36px;
+    padding: 0 0 0 12px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid  rgb(16, 86, 82);
+    background-color: rgb(251, 243, 228);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  .input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px rgb(251, 243, 228);
+    background-color: rgb(201, 193, 178);
+  }
+  
+  .promo form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+    width: 100%;
+    height: 36px;
+    background: rgba(16, 86, 82, .75);
+    box-shadow: 0px 0.5px 0.5px #F3D2C9, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+    border-radius: 5px;
+    border: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  
+  /* Checkout */
+  .payments .details {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    padding: 0px;
+    gap: 5px;
+  }
+  
+  .payments .details span:nth-child(odd) {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    margin: auto auto auto 0;
+  }
+  
+  .payments .details span:nth-child(even) {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin: auto 0 auto auto;
+  }
+  
+  .checkout .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    background-color: rgba(16, 86, 82, .5);
+  }
+  
+  .pricee {
+    position: relative;
+    font-size: 22px;
+    color: #2B2B2F;
+    font-weight: 900;
+  }
+  
+  .checkout .checkout-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+    background: rgba(16, 86, 82, .55);
+    box-shadow: 0px 0.5px 0.5px rgba(16, 86, 82, .75), 0px 1px 0.5px rgba(16, 86, 82, .75);
+    ;
+    border-radius: 7px;
+    border: 1px solid rgb(16, 86, 82);
+    ;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  
+</style>
+
+</html>
